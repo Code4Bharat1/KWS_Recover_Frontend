@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Optional lock file (if you don’t want to include it)
+package-lock.json

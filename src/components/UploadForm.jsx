@@ -38,7 +38,7 @@ const UploadForm = () => {
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}`,
+        `${import.meta.env.VITE_API_URL}/upload`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -144,7 +144,7 @@ const UploadForm = () => {
               style={{
                 width: "120px",
                 height: "120px",
-                objectFit: "cover",
+                objectFit: "contain",
                 borderRadius: "12px",
                 border: "1px solid #ccc",
                 margin: "0 auto",
